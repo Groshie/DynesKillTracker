@@ -1,10 +1,10 @@
-//#####################################\\
+//#########################################\\
 //### Dyne's JS MUSHClient Plugin	###\\
-//###				for				###\\
-//###		Tracking Your Kills		###\\
-//###				for				###\\
+//###		for			###\\
+//###	Tracking Your Kills		###\\
+//###		for			###\\
 //###  Absolutely no good reason	###\\
-//#####################################\\
+//#########################################\\
 
 // Check if trigger is enabled
 if (GetTriggerOption("killTrigger", "enabled") == 1) {
