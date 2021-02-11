@@ -88,8 +88,7 @@
 <!--  Variables  -->
 
 <variables>
-  <variable name="killList">Entity;Killed
-</variable>
+  <variable name="killList">Entity;Killed</variable>
   <variable name="killShow">-1</variable>
 </variables>
 
