@@ -29,7 +29,7 @@
 
 <triggers>
   <trigger
-   custom_colour="15"
+   custom_colour="0"
    enabled="y"
    match="You kill *"
    name="killTrigger"
