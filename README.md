@@ -11,7 +11,7 @@
   <li>Hit the "Add..." button</li>
   <li>Select the downloaded .xml-file, then hit OK!</li>
   <li>????</li>
-  <li>Profit!<li>
+  <li>Profit!</li>
 </ul>
 
 <h2>Current commands:</h2>
