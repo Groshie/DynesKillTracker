@@ -89,57 +89,7 @@
 
 <variables>
   <variable name="killList">Entity;Killed
-boring child;1
-cockroach;1
-rat;1
-religious woman;1
-bodyguard;3
-dreamy banker;1
-Septa DeBlano;1
-Freda Glottik;1
-Rixacardo;1
-tiny opera singer;1
-accountant;2
-sad man;1
-tall man;1
-young priestess;1
-diligent priest;1
-dutiful priestess;1
-little old lady;9
-pedantic slave;1
-self-confident athlete;1
-rude hawker;2
-morose philosopher;1
-confused slave;2
-proud woman;1
-powerful athlete;1
-fretful man;1
-affable philosopher;1
-rebellious philosopher;1
-inattentive labourer;1
-attractive lady;2
-impotent athlete;1
-dogmatic hawker;1
-giant tortoise;2
-elderly silversmith;1
-speculative philosopher;1
-pecked tortoise;1
-grubby woman;1
-agreeable hawker;1
-unwavering hoplite;1
-beautiful lady;1
-enchanting lady;1
-bored philosopher;1
-impatient philosopher;1
-officious official;1
-deep green tortoise;1
-obnoxious beggar;1
-elderly artisan;1
-rascally girl;1
-chubby boy;1
-petite lady;1
-dangerous cutthroat;1
-Mrs Plenty;1</variable>
+</variable>
   <variable name="killShow">-1</variable>
 </variables>
 
