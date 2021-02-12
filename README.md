@@ -24,6 +24,6 @@
   <tr><th>killtracktoggle</th><td>Toggle tracking trigger on/off</td><td>killtracktoggle</td></tr>
   <tr><th>killtracklookup <creature></th><td>Lookup specific kills</td><td>killtracklookup Cohen</td></tr>
   <tr><th>killtrackshow</th><td>Toggle "on kill" messages off/on</td><td>killtrackshow</td></tr>
-  <tr><th>killtrackreset</th><td>Reset triggers, aliases and variables</td><td>killtrackreset</td></tr> 
+  <tr><th>killtrackreset</th><td>(Unnecessary when installed as plugin)</td><td>killtrackreset</td></tr> 
   <tr><th>killtrackhelp</th><td>Show a list of available commands</td><td>killtrackhelp</td></tr> 
 </table>
