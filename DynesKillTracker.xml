@@ -20,11 +20,6 @@
 
 </plugin>
 
-
-<!--  Get our standard constants -->
-
-<include name="constants.js"/>
-
 <!--  Triggers  -->
 
 <triggers>
@@ -84,13 +79,6 @@
   >
   </alias>
 </aliases>
-
-<!--  Variables  -->
-
-<variables>
-  <variable name="killList">Entity;Killed</variable>
-  <variable name="killShow">-1</variable>
-</variables>
 
 <!--  Script  -->
 
