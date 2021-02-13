@@ -5,6 +5,7 @@
   <li>How to install</li>
   <li>Commands</li>
   <li>How to update/uninstall</li>
+  <li>Known bugs</li>
 </ol>
   
 <h2>Description:</h2>
@@ -46,5 +47,11 @@
   <li>Delete the .xml-file that has a serial in it's name that matches: 5acdf51053649069b5a2f9a7</li>
   <li>Now you can follow the directions under "How to install" to re-add the plugin!</li>
 </ol>
+
+<h2>Known bugs:</h2>
+<ul>
+  <li>Killing crows in terrains don't give a kill message, it's hard to know if *you* should get the credit!</li>
+  <li>Killing things turned into frogs will add a frog entry. I like it, might keep it!</li>
+</ul>
   
 <h2>Thank you for remembering those you have bested in mortal combat! <3</h2>
