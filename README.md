@@ -7,7 +7,7 @@
   <li>How to update/uninstall</li>
 </ol>
   
-<h2>Description:</li>
+<h2>Description:</h2>
 <p>It's a plugin for MUSHclient, for use with the Discworld MUD.</p>
 <p>Have you ever wondered how many foes you have vanquished?</p>
 <p>Have you ever spent long nights crunching those numbers?</p>
