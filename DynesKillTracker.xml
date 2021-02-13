@@ -252,7 +252,7 @@ function parseTextToObject(text) {
 
 function objectToString(object) {
 	// Converts the object to our multiline-string that can be stored
-	//var string = "Entity;Killed" // <-- Debugging
+	var string = "Entity;Killed";
 	// Go through each key/value pair in object and put in string variable...
 	for (key in object) {
 		if (key == "Entity") { // <-- If key is Entity, we want to skip that...
