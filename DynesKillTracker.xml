@@ -93,32 +93,6 @@
 //###  Absolutely no good reason	###\\
 //#####################################\\
 
-// Check if trigger is enabled
-if (GetTriggerOption("killTrigger", "enabled") == 1) {
-	// Trigger "killTrigger" is enabled
-	world.Note("Dyne's completely necessary killtrigger is already enabled!");
-} else {
-	// Trigger is not enabled, enables trigger "killTrigger"
-	world.Note("Creating Dyne's completely necessary killtrigger!")
-	var killTrig = world.AddTrigger("killTrigger", "You kill *", "", 1, 14, 0, "", "addKill");
-}
-
-
-// Check if alias is created
-if (world.GetAliasOption("killAlias", "enabled") == 1) {
-	// Alias "killAlias" is enabled
-	world.Note("Dyne's completely necessary killalias is already enabled!");
-} else {
-	world.Note("Creating Dyne's completely necessary killalias!")
-	world.AddAlias("killAlias", "killtrack", "", 1, "showKills");
-	world.AddAlias("killToggle", "killtracktoggle", "", 1, "trackToggle");
-	world.AddAlias("killLookup", "killtracklookup *", "", 1, "trackLookup");
-	world.AddAlias("killHelp", "killtrackhelp", "", 1, "trackHelp");
-	world.AddAlias("killShow", "killtrackshow", "", 1, "trackShow");
-	world.AddAlias("killreset", "killtrackreset", "", 1, "trackReset");
-}
-
-
 // Check if variable "killShow" exists
 if (world.getVariable("killShow" == null)) {
 	world.SetVariable("killShow", true);
@@ -128,13 +102,13 @@ if (world.getVariable("killShow" == null)) {
 // Check if variable "killList" exists
 if (world.getVariable("killList" == null)) {
 	// Variable doesn't exist, create variable "killList"
-	world.Note("Initializing Dyne's totally necessary kill list variable...");
-	world.SetVariable("killList", "Entity;Killed");
-	var killList = "Entity;Killed";
+	//world.Note("Initializing Dyne's totally necessary kill list variable..."); // <-- Debugging
+	world.SetVariable("killList", "");
+	var killList = "";
 } else {
 	// Variable exists
 	var killList = parseTextToObject(world.getVariable("killList"));
-	world.Note("Dyne's totally necessary kill list already in place!");
+	//world.Note("Dyne's totally necessary kill list already in place!"); // <-- Debugging
 }
 //for (x in killList) { // <-- Debugging
 //	world.Note(x + ": " + killList[x]);
@@ -171,7 +145,6 @@ function addKill() {
 		world.Note(matchText + ": " + killList[matchText] + " kills!");
 	}
 	world.SetVariable("killList", objectToString(killList));
-	// world.Note("And that's all, folks!");
 	return
 }
 
@@ -182,6 +155,9 @@ function showKills() {
 	world.Note("Your kill list (Entity: Number of kills):")
 	var totalKillCount = 0;
 	for (entry in killList) {
+		if (entry == "Entity") { // <-- Just in case, we don't want the Entity-value
+			continue
+		}
 		world.Note(entry + ":\t" + killList[entry] + " times!");
 		totalKillCount += killList[entry];
 	}
@@ -233,7 +209,6 @@ function trackHelp() {
 	helpText += "killtracktoggle:\t\tToggle trigger on/off. Ex: killtracktoggle\n";
 	helpText += "killtracklookup <creature>:\tLookup specific kills. Ex: killtracklookup Cohen\n";
 	helpText += "killtrackshow:\t\t\tToggle kill messages off/on. Ex: killtrackshow\n";
-	helpText += "killtrackreset:\t\t\tReset triggers, aliases and variables. Ex: killtrackreset";
 	world.Note(helpText);
 	return
 }
@@ -249,35 +224,6 @@ function trackShow() {
 		world.SetVariable("killShow", true);
 	}
 	return
-}
-
-function trackReset() {
-	// Function for resetting everything! (Not for the faint of heart)
-	// Begin by deleting triggers and aliases
-	world.Note("Cleaning up...");
-	world.DeleteTrigger("killTrigger");
-	world.DeleteAlias("killAlias");
-	world.DeleteAlias("killToggle");
-	world.DeleteAlias("killLookup");
-	world.DeleteAlias("killHelp");
-	world.DeleteAlias("killShow");
-	world.DeleteAlias("killreset");
-	
-	// Move on to re-adding triggers and aliases
-	world.Note("Resetting triggers, aliases and variables...");
-	world.AddTrigger("killTrigger", "You kill *", "", 1, 14, 0, "", "addKill");
-	world.AddAlias("killAlias", "killtrack", "", 1, "showKills");
-	world.AddAlias("killToggle", "killtracktoggle", "", 1, "trackToggle");
-	world.AddAlias("killLookup", "killtracklookup *", "", 1, "trackLookup");
-	world.AddAlias("killHelp", "killtrackhelp", "", 1, "trackHelp");
-	world.AddAlias("killShow", "killtrackshow", "", 1, "trackShow");
-	world.AddAlias("killreset", "killtrackreset", "", 1, "trackReset");
-	
-	// Finally, reset variables
-	world.SetVariable("killShow", true);
-	world.SetVariable("killList", "Entity;Killed");
-	killList = {};
-	world.Note("Done!");
 }
 
 
@@ -303,7 +249,7 @@ function parseTextToObject(text) {
 
 function objectToString(object) {
 	// Converts the object to our multiline-string that can be stored
-	var string = "Entity;Killed"
+	//var string = "Entity;Killed" // <-- Debugging
 	// Go through each key/value pair in object and put in string variable...
 	for (key in object) {
 		if (key == "Entity") { // <-- If key is Entity, we want to skip that...
