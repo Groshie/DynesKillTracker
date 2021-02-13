@@ -6,6 +6,7 @@
   <li>Commands</li>
   <li>How to update/uninstall</li>
   <li>Known bugs</li>
+  <li>Screenshots</li>
 </ol>
   
 <h2>Description:</h2>
@@ -53,5 +54,13 @@
   <li>Killing crows in terrains don't give a kill message, it's hard to know if *you* should get the credit!</li>
   <li>Killing things turned into frogs will add a frog entry. I like it, might keep it!</li>
 </ul>
-  
+
+<h2>Screenshots</h2>
+<p><em>Message after killing something. Can be turned off by using 'killtracktoggle':</em></p>
+<img src="https://github.com/Groshie/DynesKillTracker/blob/main/screenshot_killmsg.png">
+<p><em>Example of 'killtrack' output:</em></p>
+<img src="https://github.com/Groshie/DynesKillTracker/blob/main/screenshot_killtrack.png">
+<p><em>Example of the 'killtracklookup' command:</em></p>
+<img src="https://github.com/Groshie/DynesKillTracker/blob/main/screenshot_lookup.png">
+
 <h2>Thank you for remembering those you have bested in mortal combat! <3</h2>
