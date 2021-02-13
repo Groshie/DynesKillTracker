@@ -104,7 +104,7 @@ if (world.getVariable("killList" == null)) {
 	// Variable doesn't exist, create variable "killList"
 	//world.Note("Initializing Dyne's totally necessary kill list variable..."); // <-- Debugging
 	world.SetVariable("killList", "");
-	var killList = "";
+	var killList = {};
 } else {
 	// Variable exists
 	var killList = parseTextToObject(world.getVariable("killList"));
