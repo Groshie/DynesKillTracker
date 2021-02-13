@@ -230,6 +230,9 @@ function trackShow() {
 // ### General functions ###
 function parseTextToObject(text) {
 	// Parses a text to object, delimiters in order: "\n" and ";"
+	if (!(text)) {
+		"Entry;Kills";
+	}
 	var splitArray = text.split("\n");
 	var object = {};
 	for (var i=0;i<splitArray.length;i++) {
