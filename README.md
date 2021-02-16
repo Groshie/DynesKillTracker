@@ -49,6 +49,7 @@
   <li>Delete the .xml-file that has a serial in it's name that matches: 5acdf51053649069b5a2f9a7</li>
   <li>Now you can follow the directions under "How to install" to re-add the plugin!</li>
 </ol>
+Note that removing the state-file will reset all variables too!
 
 <h2>Known bugs:</h2>
 <ul>
