@@ -19,7 +19,7 @@
 
 <h2>How to install:</h2>
 <ul>
-  <li>Download the .xml-file and place it somewhere you can find it</li>
+  <li>Download the .xml-file (only one of them, stable version recommended) and place it somewhere you can find it</li>
   <li>Open MUSHclient (5.06)</li>
   <li>Go to File --> Plugins (or hit Shift+Ctrl+P)</li>
   <li>Hit the "Add..." button</li>
