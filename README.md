@@ -36,6 +36,7 @@
   <tr><th>killtracklookup <creature></th><td>Lookup specific kills</td><td>killtracklookup Cohen</td></tr>
   <tr><th>killtrackshow</th><td>Toggle "on kill" messages off/on</td><td>killtrackshow</td></tr>
   <tr><th>killtrackhelp</th><td>Show a list of available commands</td><td>killtrackhelp</td></tr> 
+  <tr><th>killtrack *</th><td>Same as killtracklookup, only in "unstable" version!</td><td>killtrack Cohen</td>
 </table>
 
 <h2>How to update/uninstall:</h2>
