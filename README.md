@@ -14,7 +14,7 @@
 <p>Have you ever wondered how many foes you have vanquished?</p>
 <p>Have you ever spent long nights crunching those numbers?</p>
 <p>Well, put down your pens and papers and look no further!<p>
-<p>This plugin will track <strong>your</strong> kills, and will be able to present you with structured information about your deeds!<p>
+<p>This plugin will track <strong><em>your</em></strong> kills, and will be able to present you with structured information about your deeds!<p>
 <p>Written in the abomination that is JScript, then converted to XML.</p>
 
 <h2>How to install:</h2>
