@@ -31,7 +31,7 @@
 <h2>Current commands:</h2>
 <table>
   <tr><th>Command</th><th>Effect</th><th>Example</th></tr>
-  <tr><th>killtrack</th><td>Lists all kills!</td><td>killtracktoggle</td></tr>
+  <tr><th>killtrack</th><td>Lists all kills!</td><td>killtrack</td></tr>
   <tr><th>killtracktoggle</th><td>Toggle tracking trigger on/off</td><td>killtracktoggle</td></tr>
   <tr><th>killtrack <creature></th><td>Lookup specific kills</td><td>killtracklookup Cohen</td></tr>
   <tr><th>killtrackshow</th><td>Toggle "on kill" messages off/on</td><td>killtrackshow</td></tr>
