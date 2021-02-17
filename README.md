@@ -22,8 +22,9 @@
   <li>Download the .xml-file and place it somewhere you can find it (like: ..\MUSHclient\plugins\)</li>
   <li>Open MUSHclient (5.06)</li>
   <li>Go to File --> Plugins (or hit Shift+Ctrl+P)</li>
-  <li>Hit the "Add..." button</li>
-  <li>Select the downloaded .xml-file, then hit OK!</li>
+  <li>Click on the "Add..." button</li>
+  <li>Select the downloaded .xml-file, then click OK!</li>
+  <li>Start playing and go fight something!</li>
   <li>????</li>
   <li>Profit!</li>
 </ul>
@@ -40,7 +41,7 @@
 
 <h2>How to update/uninstall:</h2>
 <ol>
-  <li>Go to MUSHclient, File --> Plugins</li>
+  <li>Open MUSHclient, go to File --> Plugins</li>
   <li>Click on DynesKillTracker, and click the "Remove"-button</li>
   <li>Go to the directory where you installed the plugin from</li>
   <li>Delete the file DynesKillTracker.xml (this is my plugin-file)</li>
