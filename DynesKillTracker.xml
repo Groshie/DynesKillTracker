@@ -154,10 +154,16 @@ function afterKillShow(killedThing) {
 	// world.Note("0. " + killedThing);
 	if (killedThing.substr(0,1) != killedThing.substr(0,1).toUpperCase()) {
 		// world.Note("1. It's not a named NPC!");
+		var vowelsFromHell = "aieou";
 		killedThing = killedThing.split(" ");
 		var nameLength = killedThing.length;
 		killedThing = killedThing[parseInt(nameLength) - 1];
-		var killedText = "You have killed a ";
+		var killedText = "You have killed ";
+		if (vowelsFromHell.match(killedThing.substr(0,1).toLowerCase())) {
+			killedText += "an ";
+		} else {
+			killedText += "a ";
+		}
 	} else {
 		var killedText = "You have killed ";
 	}
