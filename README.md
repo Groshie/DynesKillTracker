@@ -19,7 +19,7 @@
 
 <h2>How to install:</h2>
 <ul>
-  <li>Download the .xml-file (only one of them, stable version recommended) and place it somewhere you can find it</li>
+  <li>Download the .xml-file and place it somewhere you can find it (like: ..\MUSHclient\plugins\)</li>
   <li>Open MUSHclient (5.06)</li>
   <li>Go to File --> Plugins (or hit Shift+Ctrl+P)</li>
   <li>Hit the "Add..." button</li>
@@ -33,10 +33,9 @@
   <tr><th>Command</th><th>Effect</th><th>Example</th></tr>
   <tr><th>killtrack</th><td>Lists all kills!</td><td>killtracktoggle</td></tr>
   <tr><th>killtracktoggle</th><td>Toggle tracking trigger on/off</td><td>killtracktoggle</td></tr>
-  <tr><th>killtracklookup <creature></th><td>Lookup specific kills</td><td>killtracklookup Cohen</td></tr>
+  <tr><th>killtrack <creature></th><td>Lookup specific kills</td><td>killtracklookup Cohen</td></tr>
   <tr><th>killtrackshow</th><td>Toggle "on kill" messages off/on</td><td>killtrackshow</td></tr>
   <tr><th>killtrackhelp</th><td>Show a list of available commands</td><td>killtrackhelp</td></tr> 
-  <tr><th>killtrack *</th><td>Same as killtracklookup, only in "unstable" version!</td><td>killtrack Cohen</td>
 </table>
 
 <h2>How to update/uninstall:</h2>
@@ -49,11 +48,12 @@
   <li>Delete the .xml-file that has a serial in it's name that matches: 5acdf51053649069b5a2f9a7</li>
   <li>Now you can follow the directions under "How to install" to re-add the plugin!</li>
 </ol>
-Note that removing the state-file will reset all variables too!
+(Note that removing the state-file will reset all variables too, so don't delete it if you want to just re-install!)
 
 <h2>Known bugs:</h2>
 <ul>
   <li>Killing crows in terrains don't give a kill message, it's hard to know if *you* should get the credit!</li>
+  <li>Same goes for killing certain brigands in the Ramtops.</li>
   <li>Killing things turned into frogs will add a frog entry. I like it, might keep it!</li>
 </ul>
 
