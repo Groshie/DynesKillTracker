@@ -65,7 +65,7 @@
   <alias
    name="killLookup"
    script="trackLookup"
-   match="killtracklookup *"
+   match="killtrack *"
    enabled="y"
    sequence="100"
   >
@@ -142,10 +142,43 @@ function addKill() {
 	//	world.Note(entry + ": " + killList[entry]);
 	//}
 	if (world.GetVariable("killShow") != 0) {
-		world.Note(matchText + ": " + killList[matchText] + " kills!");
+		afterKillShow(matchText);
 	}
 	world.SetVariable("killList", objectToString(killList));
 	return
+}
+
+
+function afterKillShow(killedThing) {
+	// Shows killtext after player kills something
+	// world.Note("0. " + killedThing);
+	if (killedThing.substr(0,1) != killedThing.substr(0,1).toUpperCase()) {
+		// world.Note("1. It's not a named NPC!");
+		killedThing = killedThing.split(" ");
+		var nameLength = killedThing.length;
+		killedThing = killedThing[parseInt(nameLength) - 1];
+		var killedText = "You have killed a ";
+	} else {
+		var killedText = "You have killed ";
+	}
+	
+	killedText += killedThing + " ";
+	// world.Note("2. " + killedText);
+	var lookupCount = 0;
+	
+	for (var entry in killList) {
+		if (entry.toLowerCase().match(killedThing.toLowerCase())) {
+			// world.Note("3. " + entry);
+			lookupCount += killList[entry];
+		}
+	}
+	killedText += lookupCount;
+	if (lookupCount > 1) {
+		killedText += " times!";
+	} else {
+		killedText += " time!";
+	}
+	world.Note(killedText);
 }
 
 
@@ -182,7 +215,7 @@ function trackToggle() {
 function trackLookup(name, line, wildcards) {
 	// Function to lookup kills in the list, takes one argument
 	// world.Note("Alias " + name + " was triggered!"); // <-- Debugging
-	var lookup = line.replace("killtracklookup ", "");
+	var lookup = line.replace("killtrack ", "");
 	var lookupText = "The following creatures match your query:";
 	var lookupCount = 0;
 	for (var entry in killList) {
@@ -252,7 +285,7 @@ function parseTextToObject(text) {
 
 function objectToString(object) {
 	// Converts the object to our multiline-string that can be stored
-	var string = "Entity;Killed";
+	var string = "Entity;Killed" // <-- Debugging
 	// Go through each key/value pair in object and put in string variable...
 	for (key in object) {
 		if (key == "Entity") { // <-- If key is Entity, we want to skip that...
