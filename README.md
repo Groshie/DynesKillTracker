@@ -44,8 +44,8 @@
   <li>Click on DynesKillTracker, and click the "Remove"-button</li>
   <li>Go to the directory where you installed the plugin from</li>
   <li>Delete the file DynesKillTracker.xml (this is my plugin-file)</li>
-  <li>Go to the ..\MUSHclient\worlds\plugins\state\-directory</li>
-  <li>Delete the .xml-file that has a serial in it's name that matches: 5acdf51053649069b5a2f9a7</li>
+  <li>Optional: Go to the ..\MUSHclient\worlds\plugins\state\-directory</li>
+  <li>Optional: Delete the .xml-file that has a serial in it's name that matches: 5acdf51053649069b5a2f9a7</li>
   <li>Now you can follow the directions under "How to install" to re-add the plugin!</li>
 </ol>
 (Note that removing the state-file will reset all variables too, so don't delete it if you want to just re-install!)
